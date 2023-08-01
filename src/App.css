@@ -1,2 +1,74 @@
+.full_container{
+    display: flex;
+    justify-content: space-between;
+    background-color: cornsilk;
+}
+
+.currency_container{
+    width: 500px;
+    background-color: white;
+    height: 600px;
+    border-radius: 30px;
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
 
+.dropdown_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.DropdownR{
+    width: 200px;
+    margin-top: 5px;
+    margin-right: 25px;
+}
+
+.DropdownL{
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.input_container{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+}
+
+.input_container input{
+    width: 450px;
+    padding: 5px 15px 5px 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    border-style: none;
+    border-bottom: 2px solid #1E5748;
+    margin-bottom: 20px;
+}
+
+
+
+.image_container{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.image_container h3{
+    font-weight: 700;
+    font-size: 25px;
+    color: #1E5748;
+}
+
+.button_container{
+    text-align: center;
+}
+
+.button_container .button{
+    background-color: #1E5748;
+    width: 450px;
+}
