@@ -20,10 +20,4 @@ const convert = (from, to, amount) => {
   });
 };
 
-convert("USD", "PHP", 1)
-  .then((data) => {
-    console.log(data);
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+module.exports = convert;
