@@ -7,12 +7,14 @@ import image from "../img/images.png";
 function Currency() {
   const [CurrencyVal, setCurrencyVal] = useState("");
   const [DropdownRight, setDropdownRight] = useState("");
+  const [DropdownLeft, setDropdownLeft] = useState("");
 
   const [rates, setRates] = useState([]);
 
   async function submit(e) {
     e.preventDefault();
     console.log(CurrencyVal);
+    console.log(DropdownLeft);
     console.log(DropdownRight);
   }
 
@@ -21,7 +23,6 @@ function Currency() {
       setRates([res.data.base, ...Object.keys(res.data.rates)]);
     });
   }, []);
-  console.log(rates);
 
   return (
     <div class="full_container">
@@ -42,7 +43,12 @@ function Currency() {
           </div>
 
           <div class="dropdown_container">
-            <DropdownL />
+            <DropdownL
+              rates={rates}
+              onchangeCurrency={(e) => {
+                setDropdownLeft(e.target.value);
+              }}
+            />
             <DropdownR
               rates={rates}
               onchangeCurrency={(e) => {

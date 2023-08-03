@@ -9,6 +9,7 @@ function DropdownR(props) {
         aria-label=".form-select-sm example"
         onChange={onchangeCurrency}
       >
+        <option selected>To</option>
         {rates.map((convert) => (
           <option key={convert} value={convert}>
             {convert}
