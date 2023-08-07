@@ -11,7 +11,8 @@ const convert = (from, to, amount) => {
           amount: res.data.amount,
           date: res.data.date,
           from: res.data.base,
-          to: res.data.rates,
+          to: Object.keys(res.data.rates),
+          converted: Object.values(res.data.rates),
         });
       })
       .catch((err) => {
