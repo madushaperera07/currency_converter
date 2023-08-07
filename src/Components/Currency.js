@@ -6,16 +6,33 @@ import image from "../img/images.png";
 
 function Currency() {
   const [CurrencyVal, setCurrencyVal] = useState("");
-  const [DropdownRight, setDropdownRight] = useState("");
   const [DropdownLeft, setDropdownLeft] = useState("");
+  const [DropdownRight, setDropdownRight] = useState("");
 
   const [rates, setRates] = useState([]);
 
+  const [backend, setbackend] = useState([]);
+
   async function submit(e) {
     e.preventDefault();
-    console.log(CurrencyVal);
-    console.log(DropdownLeft);
-    console.log(DropdownRight);
+    axios
+      .post("http://localhost:9000/api", {
+        CurrencyVal,
+        DropdownLeft,
+        DropdownRight,
+      })
+      .then((response) => {
+        setbackend({
+          amount: response.data.amount,
+          date: response.data.date,
+          from: response.data.from,
+          to: response.data.to[0],
+          converted: response.data.converted[0],
+        });
+      })
+      .catch((error) => {
+        console.log("error");
+      });
   }
 
   useEffect(() => {
@@ -66,11 +83,28 @@ function Currency() {
           </div>
         </form>
 
-        <p>Out Put</p>
+        <div class="all_result">
+          <div class="result_container">
+            <div class="amount">
+              <p>{backend.amount}</p>
+            </div>
+            <div class="from">
+              <p>{backend.from}</p>
+            </div>
+            <i class="bi bi-arrow-left-right icon"></i>
+            <div class="convarted">
+              <p>{backend.converted}</p>
+            </div>
+            <div class="to">
+              <p>{backend.to}</p>
+            </div>
+          </div>
+          <p class="date_containe">{backend.date}</p>
+        </div>
       </div>
 
       <div>
-        <p>Hello</p>
+        <p>hello</p>
       </div>
     </div>
   );

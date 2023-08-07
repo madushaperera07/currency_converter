@@ -72,3 +72,56 @@
     background-color: #1E5748;
     width: 450px;
 }
+
+.result_container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.amount{
+    font-size: 20px;
+    border-bottom: 3px solid black;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+.from{
+    font-size: 20px;
+    border-bottom: 3px solid black;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+.convarted{
+    font-size: 20px;
+    border-bottom: 3px solid black;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+.to{
+    font-size: 20px;
+    border-bottom: 3px solid black;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+.result_container i{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.all_result{
+    text-align: center;
+}
+
+.date_containe{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
