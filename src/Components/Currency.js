@@ -3,6 +3,7 @@ import DropdownL from "./DropdownL";
 import DropdownR from "./DropdownR";
 import axios from "axios";
 import image from "../img/images.png";
+import Calculator from "./Calculator";
 
 function Currency() {
   const [CurrencyVal, setCurrencyVal] = useState("");
@@ -102,9 +103,8 @@ function Currency() {
           <p class="date_containe">{backend.date}</p>
         </div>
       </div>
-
       <div>
-        <p>hello</p>
+      <Calculator/>
       </div>
     </div>
   );

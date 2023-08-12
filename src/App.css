@@ -125,3 +125,74 @@
     font-size: 20px;
     font-weight: 600;
 }
+
+
+
+
+
+
+/* calculator styling */
+
+.calculator_container{
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.calculator{
+    width: 300px;
+    height: 400px;
+}
+
+.button_cla{
+    width: 70px;
+    height: 70px;
+    background-color: #1E5748;
+    border-radius: 10px;
+    margin: 2.5px;
+    color: white;
+}
+
+.button_cla_plus{
+    width: 70px;
+    height: 140px;
+    background-color: #1E5748;
+    border-radius: 10px;
+    margin: 2.5px;
+    color: white;
+}
+
+.button_cla_zero{
+    width: 145px;
+    height: 70px;
+    background-color: #1E5748;
+    border-radius: 10px;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    color: white;
+}
+
+.up_container{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.bottom_container{
+    margin-top: -70px;
+}
+
+.input_cal{
+    width: 300px;
+    height: auto;
+    padding: 5px;
+    font-size: 30px;
+}
