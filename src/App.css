@@ -170,15 +170,6 @@
     color: white;
 }
 
-.button_cla_zero{
-    width: 145px;
-    height: 70px;
-    background-color: #1E5748;
-    border-radius: 10px;
-    margin-left: 2.5px;
-    margin-right: 2.5px;
-    color: white;
-}
 
 .up_container{
     display: flex;
@@ -195,4 +186,17 @@
     height: auto;
     padding: 5px;
     font-size: 30px;
+    background-color: #1E5748;
+    color: white;
+    border-radius: 10px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.button_cla:hover{
+    background-color: black;
+}
+
+.button_cla_plus:hover{
+    background-color: black;
 }
